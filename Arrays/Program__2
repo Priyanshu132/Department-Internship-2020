@@ -1,0 +1,23 @@
+              
+//** Write a program to initialize an integer array and find the maximum and minimum value of the array. **//
+
+package program_2;
+
+
+public class Program_2 {
+
+  
+    public static void main(String[] args) {
+       int[] arr={1,2,3,4,5,6,7,8,9,10};
+       int min=arr[0];
+       int max=arr[0];
+       for(int i=1;i<arr.length;i++){
+           min=Math.min(min, arr[i]);
+            max=Math.max(max, arr[i]);
+       }
+       
+        System.out.println("Minimum value of the Array: " + min);
+        System.out.println("Maximum value of the Array: " + max);
+    }
+    
+}
